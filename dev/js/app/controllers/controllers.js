@@ -1,14 +1,9 @@
 
 //New Outlay/Income    Daily
-function readDailyOutlays(){
-	var category = $( '#new-outlay input.sel-cat' ).val(),
+/*function readDailyOutlays(){
+	var category = $( '#new-outlay select.sel-cat' ).val(),
 		cost = $('#new-outlay .inp-cos').val();
-		if (category && cost) {
-			data.setDaily(todayKeyWord, category, cost, 'outlays' );
-		} else{
-			console.log('you have some problem with data')
-		};
-	
+	data.setDaily(todayKeyWord, category, cost, 'outlays' );
 }
 
 $('#new-outlay .btn-submit').click(function() {	
@@ -17,7 +12,7 @@ $('#new-outlay .btn-submit').click(function() {
 });
 
 function readDailyIncomes(){
-	var category = $( '#new-income input.sel-cat' ).val(),
+	var category = $( '#new-income select.sel-cat' ).val(),
 		cost = $('#new-income .inp-cos').val();
 	data.setDaily(todayKeyWord, category, cost, 'incomes' );
 }
@@ -65,7 +60,7 @@ $('#regular-outlay .btn-submit').click(function() {
 	readRegularOutlays();
 });
 
-*/
+
 
 //Manage forecast(month, outlays)
 function readForecastOutlays(){
@@ -82,7 +77,7 @@ $('#manage-forecast .btn-submit').click(function() {
 
 
 
-
+*/
 
 
 

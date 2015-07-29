@@ -22,7 +22,8 @@ DataCategories.prototype.setCategory = function(category, type){
 	if (setCat[type].indexOf(category) == (-1)) {
 		setCat[type].push(category);
 
-		LS.set('categories', setCat)
+		LS.set('categories', setCat);
+		return true;
 	} else{
 		return false
 	}; 
@@ -36,7 +37,6 @@ DataCategories.prototype.removeCategory = function(category, type){
 	removeCat[type].forEach(function(value, index, ar){
 		if (value == category) {
 			ind = index;
-			console.log(ind)
 		} 
 	})
 	if (ind >= 0) {
@@ -54,7 +54,6 @@ DataCategories.prototype.removeCategory = function(category, type){
 
 var dataCategories = new DataCategories();
 dataCategories.getCategories();
-dataCategories.setCategory('car', 'incomes');
-dataCategories.setCategory('car', 'outlays');
-// dataCategories.removeCategory('transport', 'outlays');
+//dataCategories.setCategory('car4', 'outlays');
+//dataCategories.removeCategory('transport', 'outlays');
 console.log('dataCategories  -  ' + dataCategories)
